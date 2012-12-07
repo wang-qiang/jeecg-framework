@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <!DOCTYPE struts PUBLIC
+      "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+      "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="struts2" namespace="/" extends="struts-default">
+		<action name="dicManage" class="dicManageAction">
+			<result name="list">/WEB-INF/jsp/sysconfig/diclist.jsp
+			</result>
+			<result name="success">/WEB-INF/jsp/sysconfig/diclist.jsp
+			</result>
+			<result name="add">/WEB-INF/jsp/sysconfig/dicedit.jsp
+			</result>
+			<result name="edit">/WEB-INF/jsp/sysconfig/SysConfig/dicedit.jsp
+			</result>
+			<result name="del">/WEB-INF/jsp/sysconfig/diclist.jsp
+			</result>
+		</action>
+	</package>
+</struts>

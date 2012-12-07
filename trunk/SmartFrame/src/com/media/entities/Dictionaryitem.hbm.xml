@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	<!-- Generated 2009-9-25 11:55:31 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+	<class name="com.media.entities.Dictionaryitem" table="DICTIONARYITEM">
+		<id name="dictionaryitemid" type="string">
+			<column name="DICTIONARYITEMID" precision="22" scale="0" />
+			<generator class="assigned" />
+		</id>
+		<property name="dictionaryid" type="string">
+			<column name="DICTIONARYID" length="22" scale="0" />
+		</property>
+		<property name="itemnamecn" type="string">
+			<column name="ITEMNAMECN" length="128" not-null="true" />
+		</property>
+		<property name="itemnameen" type="string">
+			<column name="ITEMNAMEEN" length="128" />
+		</property>
+		<property name="itemdesciption" type="string">
+			<column name="ITEMDESCIPTION" length="128" />
+		</property>
+		<property name="itemstatus" type="string">
+			<column name="ITEMSTATUS" length="22" scale="0" />
+		</property>
+		<property name="itemtype" type="string">
+			<column name="ITEMTYPE" length="22" scale="0" not-null="true" />
+		</property>
+		<property name="itemvalue" type="string">
+			<column name="ITEMVALUE" length="50" not-null="true" />
+		</property>
+		<property name="itemorder" type="string">
+			<column name="ITEMORDER" length="22" scale="0" />
+		</property>
+		<property name="itemisvisible" type="string">
+			<column name="ITEMISVISIBLE" length="22" scale="0" />
+		</property>
+		<property name="itemisauth" type="string">
+			<column name="ITEMISAUTH" length="22" scale="0" />
+		</property>
+		<property name="lastmodusr" type="string">
+			<column name="LASTMODUSR" length="30" />
+		</property>
+		<property name="lastmodtime" type="string">
+			<column name="LASTMODTIME" length="20" />
+		</property>
+	</class>
+</hibernate-mapping>
