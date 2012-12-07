@@ -1,0 +1,14 @@
+主题：试用程序只有单表数据模型的代码生成器
+
+项目部署步骤：
+第一步.解压程序
+第二步.执行init.sql初始化数据库（mysql）
+第三步.修改配置文件
+	[1].代码生成器配置文件：src/configuration/code_config.properties （数据库连接项）
+	[2].框架配置文件resources/config.properties （数据库连接项）
+	
+	
+	
+登陆用户账号：admin/admin			
+第四步.代码生成器工具类		
+com.test.CodeUtil
